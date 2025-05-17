@@ -1,0 +1,133 @@
+export interface Product {
+  id: number
+  name: string
+  description: string
+  price: number
+  oldPrice?: number
+  discount: number
+  image: string
+  category: string
+  inStock: boolean
+  popularity: number
+  date: string
+}
+
+export const products: Product[] = [
+  {
+    id: 1,
+    name: "Roborock MaxV 6",
+    description: "Robot aspirator premium cu funcții avansate de curățare și navigare, sigilat",
+    price: 1050,
+    oldPrice: 2233,
+    discount: 53,
+    image: "/images/roborock-max-v6.png",
+    category: "electronice",
+    inStock: true,
+    popularity: 95,
+    date: "2023-05-15",
+  },
+  {
+    id: 2,
+    name: "Samsung S25",
+    description: "Smartphone Samsung S25, 256GB, 12GB RAM, cameră de 108MP, sigilat",
+    price: 2900,
+    oldPrice: 3500,
+    discount: 17,
+    image: "/images/samsung-s25.png",
+    category: "telefoane",
+    inStock: true,
+    popularity: 98,
+    date: "2023-06-20",
+  },
+  {
+    id: 3,
+    name: "iPhone 16",
+    description: "iPhone 16, 128GB, doar telefonul fără accesorii, stare foarte bună",
+    price: 3100,
+    oldPrice: 3800,
+    discount: 18,
+    image: "/images/iphone16.png",
+    category: "telefoane",
+    inStock: true,
+    popularity: 99,
+    date: "2023-07-10",
+  },
+  {
+    id: 4,
+    name: "Samsung S25 Ultra",
+    description: "Samsung S25 Ultra, 512GB, 16GB RAM, cameră de 200MP, sigilat",
+    price: 4800,
+    oldPrice: 5500,
+    discount: 13,
+    image: "/images/samsung-s25-ultra.png",
+    category: "telefoane",
+    inStock: true,
+    popularity: 97,
+    date: "2023-08-05",
+  },
+  {
+    id: 5,
+    name: "MacBook Air 15 M3",
+    description: "MacBook Air 15 cu procesor M3, model A3114, 8GB RAM, 10 core GPU, sigilat",
+    price: 4700,
+    oldPrice: 5500,
+    discount: 15,
+    image: "/images/macbook-air-m3.png",
+    category: "laptopuri",
+    inStock: true,
+    popularity: 94,
+    date: "2023-09-15",
+  },
+  {
+    id: 6,
+    name: "iPad 10 (2022)",
+    description: "iPad 10 2022, 64GB, Wi-Fi, 100% baterie, stare foarte bună",
+    price: 1500,
+    oldPrice: 1800,
+    discount: 17,
+    image: "/images/ipad-10.png",
+    category: "tablete",
+    inStock: true,
+    popularity: 92,
+    date: "2023-10-20",
+  },
+  {
+    id: 7,
+    name: "Sony PlayStation 5",
+    description: "Consolă Sony PlayStation 5, 1TB, cu controller, sigilată",
+    price: 2000,
+    oldPrice: 2500,
+    discount: 20,
+    image: "/images/playstation5.png",
+    category: "electronice",
+    inStock: true,
+    popularity: 96,
+    date: "2023-11-10",
+  },
+  {
+    id: 8,
+    name: "Apple Watch Series 9",
+    description: "Apple Watch Series 9, 45mm, GPS, stare foarte bună",
+    price: 1400,
+    oldPrice: 1800,
+    discount: 22,
+    image: "/images/apple-watch-s9.png",
+    category: "accesorii",
+    inStock: true,
+    popularity: 91,
+    date: "2023-12-05",
+  },
+  {
+    id: 9,
+    name: "Bose QuietComfort Ultra",
+    description: "Căști Bose QuietComfort Ultra, noise cancelling, sigilate",
+    price: 1200,
+    oldPrice: 1500,
+    discount: 20,
+    image: "/placeholder.svg?height=300&width=300",
+    category: "accesorii",
+    inStock: true,
+    popularity: 90,
+    date: "2024-01-15",
+  },
+]

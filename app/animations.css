@@ -1,0 +1,37 @@
+@keyframes addToCartAnimation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  20% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(0.2) translateY(-100px) translateX(200px);
+    opacity: 0;
+  }
+}
+
+.add-to-cart-animation {
+  position: absolute;
+  z-index: 100;
+  animation: addToCartAnimation 0.8s ease-in-out forwards;
+  pointer-events: none;
+}
+
+.cart-bounce {
+  animation: cartBounce 0.5s ease-in-out;
+}
+
+@keyframes cartBounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
